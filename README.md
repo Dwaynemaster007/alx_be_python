@@ -1,23 +1,28 @@
-# alx_be_python
+# 🐍 ALX Backend Python Basics
 
-This repository is dedicated to foundational Python projects. It covers basic concepts essential for any beginner, including variable assignment, arithmetic operations, and handling user input.
+Python fundamentals from the **ALX ProDev Backend** programme, from a first script to object-oriented programming and unit tests.
 
-## Project: Introduction to Python
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 
-This project provides a gentle introduction to Python programming, focusing on core syntax and simple problem-solving.
+## Projects
 
-### Files
+| Folder | Topics | Highlights |
+| --- | --- | --- |
+| [`python_introduction/`](python_introduction/) | Variables, arithmetic, input/output | Simple interest, finance calculator, future age, rectangle area |
+| [`control-flow/`](control-flow/) | `if`/`elif`, `match`/`case`, loops | Weather advice, `match`-based calculator, multiplication table, pattern drawing, daily reminder |
+| [`fns_and_dsa/`](fns_and_dsa/) | Functions, lists, `datetime` | Arithmetic operations, shopping list manager, temperature converter, date exploration |
+| [`programming_paradigm/`](programming_paradigm/) | Exceptions, OOP, testing | Bank account, robust division calculator, library management, `unittest` tests for a calculator |
+| [`oop/`](oop/) | Classes, magic methods, inheritance, polymorphism | Book class, library system, class and static methods, polymorphism demo |
+| [`messaging_app/`](messaging_app/) | Django | A starter Django project with a `chats` app |
 
-* `basic_operations.py`: Performs and prints the results of basic arithmetic operations.
-* `simple_interest.py`: Calculates and prints the simple interest on a given principal, rate, and time.
-* `rectangle_area.py`: Calculates and prints the area of a rectangle.
-* `hours_to_seconds.py`: Converts a given number of hours into seconds.
-* `future_age_calculator.py`: Prompts the user for their age and calculates their age in the year 2050.
+## Run it
 
-### How to Run
-
-To execute any of these Python scripts, navigate to the `python_introduction` directory and run the file using the `python3` command.
-
-**Example:**
 ```bash
-python3 basic_operations.py
+git clone https://github.com/Dwaynemaster007/alx_be_python.git
+cd alx_be_python/programming_paradigm
+python3 -m unittest test_simple_calculator.py
+```
+
+## Author
+
+**Thubelihle Dlamini**, [GitHub](https://github.com/Dwaynemaster007) · [LinkedIn](https://linkedin.com/in/thubelihledlamini)

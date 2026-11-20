@@ -13,15 +13,27 @@ Python fundamentals from the **ALX ProDev Backend** programme, from a first scri
 | [`fns_and_dsa/`](fns_and_dsa/) | Functions, lists, `datetime` | Arithmetic operations, shopping list manager, temperature converter, date exploration |
 | [`programming_paradigm/`](programming_paradigm/) | Exceptions, OOP, testing | Bank account, robust division calculator, library management, `unittest` tests for a calculator |
 | [`oop/`](oop/) | Classes, magic methods, inheritance, polymorphism | Book class, library system, class and static methods, polymorphism demo |
-| [`messaging_app/`](messaging_app/) | Django | A starter Django project with a `chats` app |
 
 ## Run it
 
+You only need Python 3.10+ (for `match`/`case`). Run any script from its folder:
+
 ```bash
 git clone https://github.com/Dwaynemaster007/alx_be_python.git
-cd alx_be_python/programming_paradigm
+cd alx_be_python/control-flow
+python3 match_case_calculator.py
+```
+
+Some scripts take command-line arguments:
+
+```bash
+cd ../programming_paradigm
+python3 main-0.py deposit:50        # also withdraw:20 or display
+python3 main.py 10 2                # safe division
 python3 -m unittest test_simple_calculator.py
 ```
+
+The files in `oop/` and `library_management.py` are modules to import, for example `python3 -c "from book_class import Book; print(Book('1984', 'George Orwell', 1949))"` from `oop/`.
 
 ## Author
 

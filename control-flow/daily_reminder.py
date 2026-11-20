@@ -11,6 +11,8 @@ match priority:
         reminder = f"Reminder: {task} is a medium priority task"
     case "low":
         reminder = f"Reminder: {task} is a low priority task"
+    case _:
+        reminder = f"Reminder: {task} is a task"
 
 # Modify reminder based on time sensitivity using if statement
 if time_bound == "yes":

@@ -3,8 +3,12 @@ monthly_income_str = input("Enter your monthly income: ")
 monthly_expenses_str = input("Enter your total monthly expenses: ")
 
 # Convert input strings to floating-point numbers for calculations
-monthly_income = float(monthly_income_str)
-monthly_expenses = float(monthly_expenses_str)
+try:
+    monthly_income = float(monthly_income_str)
+    monthly_expenses = float(monthly_expenses_str)
+except ValueError:
+    print("Please enter numbers only, for example 5000 or 3200.50.")
+    raise SystemExit(1)
 
 # Calculate monthly savings
 monthly_savings = monthly_income - monthly_expenses

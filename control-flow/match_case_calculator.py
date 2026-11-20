@@ -1,6 +1,10 @@
 # Prompt for two numbers and operation
-num1 = float(input("Enter the first number: "))
-num2 = float(input("Enter the second number: "))
+try:
+    num1 = float(input("Enter the first number: "))
+    num2 = float(input("Enter the second number: "))
+except ValueError:
+    print("Please enter valid numbers.")
+    raise SystemExit(1)
 operation = input("Choose the operation (+, -, *, /): ")
 
 # Perform calculation using match case

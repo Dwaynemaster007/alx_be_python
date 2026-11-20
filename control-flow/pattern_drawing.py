@@ -1,5 +1,11 @@
 # Prompt user for pattern size
-size = int(input("Enter the size of the pattern: "))
+try:
+    size = int(input("Enter the size of the pattern: "))
+except ValueError:
+    size = 0
+if size <= 0:
+    print("Please enter a positive whole number.")
+    raise SystemExit(1)
 
 # Draw square pattern using while and for loops
 row = 0
